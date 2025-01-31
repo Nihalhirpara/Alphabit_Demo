@@ -1,0 +1,44 @@
+table{
+    border: 1px solid black;
+    
+}
+
+.td1{
+    height: 700px;
+    width: 500px;
+    box-shadow: inset 0px 10px 100px black;
+}
+
+.td2{
+    height: 80px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+.td3{
+    height: 80px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.table2{
+    box-shadow: inset 0px 0px 100px black;
+    border: 7px dotted red;
+}
+
+.table3{
+    box-shadow: inset 0px 0px 100px black;
+    border: 7px dotted red;
+}
+
+img{
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
