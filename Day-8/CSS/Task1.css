@@ -1,0 +1,164 @@
+/* *{
+  padding: 0px;
+  margin: 0px;
+  /* float: left; */
+
+
+
+.div1{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  float: left;
+  margin-top: 0px;
+  margin-left: 50px;
+  border-radius: 15px;
+  box-shadow:0 0 50px coral;
+}
+
+.div2{
+  height: 100px;
+  width: 500px;
+  /* float: left; */
+  background-color: green;
+  margin-top: 30px;
+  margin-left: 210px;
+  border-radius: 15px;
+  box-shadow:0 0 50px coral;
+}
+
+.div3{
+  height: 300px;
+  width: 100px;
+  float: left;
+  background-color:burlywood;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 15px;
+  box-shadow:0 0 50px coral;
+}
+
+.div4{
+  height: 100px;
+  width: 675px;
+  float: left;
+  background-color:rgb(181, 31, 156);
+  margin-top: 380px;
+  margin-left: -100px;
+  border-radius: 15px;
+  box-shadow:0 0 50px coral;
+}
+
+.div5{
+  height: 120px;
+  width: 200px;
+  float: left;
+  background-color:yellow;
+  margin-top: 50px;
+  margin-left: -510px;
+  border-radius: 15px;
+  box-shadow:0 0 50px coral;
+  animation: f_anim 4s;
+}
+
+.div6{
+  height: 120px;
+  width: 200px;
+  float: left;
+  background-color:palevioletred;
+  margin-top: 50px;
+  margin-left: -220px;
+  border-radius: 15px;
+  box-shadow:0 0 50px coral;
+  animation: f_anim 4s;
+}
+
+.div7{
+  height: 120px;
+  width: 200px;
+  float: left;
+  background-color:yellowgreen;
+  margin-top: 230px;
+  margin-left: -510px;
+  border-radius: 15px;
+  animation: f_anim 4s;
+  box-shadow:0 0 50px coral;
+}
+
+.div8{
+  height: 120px;
+  width: 200px;
+  float: left;
+  background-color:aqua;
+  margin-top: 230px;
+  margin-left: -220px;
+  border-radius: 15px;
+  animation: f_anim 3s;
+  box-shadow:0 0 50px coral;
+}
+
+.div1:hover
+{
+box-shadow:0 0 40px rgb(12, 86, 206);
+cursor:pointer;
+}
+
+.div2:hover
+{
+box-shadow:0 0 40px black;
+transition: 2s;
+cursor:pointer;
+}
+
+.div3:hover
+{
+box-shadow:0 0 40px black;
+transition: 2s;
+cursor:pointer;
+}
+
+.div4:hover
+{
+box-shadow:0 0 40px black;
+transition: 2s;
+cursor:pointer;
+}
+
+.div5:hover
+{
+transition: 2s;
+transform:scale(1.2,1.2);
+box-shadow:0 0 10px #f953c6;
+cursor:pointer;
+}
+
+.div6:hover
+{
+transition: 2s;
+transform:scale(1.2,1.2);
+box-shadow:0 0 10px #f953c6;
+cursor:pointer;
+}
+.div7:hover
+{
+transition: 2s;
+transform:scale(1.2,1.2);
+box-shadow:0 0 10px #f953c6;
+cursor:pointer;
+}
+.div8:hover
+{
+transition: 2s;
+transform:scale(0.8,0.8);
+box-shadow:0 0 10px #f953c6;
+cursor:pointer;
+}
+
+@keyframes f_anim
+{
+25%{margin-top:200px}
+25%{margin-top:200px;} 
+25%{margin-left:100px;}
+25%{margin-left:200px;}
+
+}
