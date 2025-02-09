@@ -493,6 +493,7 @@ footer img {
   font-size: 20px;
   font-family: Arial, sans-serif;
   margin-top: 50px;
+  margin-right: 50px;
   text-align: justify;
 }
 .page-title {
@@ -521,7 +522,8 @@ footer img {
   font-size: 20px;
   list-style: none;
   margin-top: 50px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
+  margin-right: 50px;
   text-align: justify;
 }
 /* .auto-container {
@@ -542,6 +544,7 @@ footer img {
   font-size: 20px;
   width: 70%;
   text-align: start;
+  font-family: Arial, sans-serif;
   margin-top: 40px;
   text-align: justify;
 }
