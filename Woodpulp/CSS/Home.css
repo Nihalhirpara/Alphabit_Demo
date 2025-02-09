@@ -67,134 +67,99 @@
   width: 100px;
 }
 
-/* .img{
-    height: 265px;
-    width: 100px;
-    position: relative;
-    display: inline-block;
-} */
-
 /* --------header3--------- */
-.nav {
-  margin-top: 20px;
-
-  height: 70px;
-  width: 100%;
-  background-color: rgb(69, 51, 43);
+.navbar {
   display: flex;
-  color: white;
-}
-.list ul {
-  margin-top: 25px;
-  margin-left: 200px;
-  display: flex;
-  list-style: none;
-  gap: 60px;
-  font-weight: bold;
-  cursor: pointer;
-}
-.list_a {
-  height: 50px;
-}
-
-.product {
-  display: none !important;
-  cursor: pointer;
-  position: absolute;
-  display: flex;
-  background-color: black;
-  flex-direction: column;
-  margin-top: -50px;
-  /* text-align: center; */
-  height: 120px;
-  width: 220px;
-  justify-content: center;
-  z-index: 3;
-}
-
-.Evolve_item {
-  display: flex;
-  display: none !important;
-  background-color: black;
-  /* color: blue; */
-  width: 200px;
-  margin-left: 105px;
-  margin-top: -50px;
-  position: absolute;
-  cursor: pointer;
-}
-.classic_item {
-  display: none;
-  background-color: black;
-  color: rgb(0, 0, 0);
+  margin-top: 15px;
+  justify-content: space-between;
   align-items: center;
-  width: 200px;
-  margin-left: 150px;
-  margin-top: -40px;
-  position: absolute;
-  cursor: pointer;
+  background-color: #45332b;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
 }
-
-#a:hover {
-  background-color: #bf8c4d;
-  width: fit-content;
-}
-
-.list_b1:hover {
-  background-color: #bf8c4d;
-}
-.list_b2:hover {
-  background-color: #bf8c4d;
-}
-.list_b3:hover {
-  background-color: #bf8c4d;
-}
-.list_b:hover {
-  background-color: #bf8c4d;
-}
-
-#sub:hover .product {
-  display: block;
-  width: fit-content;
-  display: block !important;
-
+.dropdown {
   margin-top: 10px;
 }
 
-.product ul {
-  list-style-type: none;
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar .nav-links {
   display: flex;
-  flex-direction: column;
-  margin-left: 0px;
-  margin-top: 20px;
-}
-.Evolve_item .list_b1 {
-  margin-top: -5px;
+  gap: 20px;
+  margin-left: 200px;
+  font-weight: 600;
 }
 
-.Evolve_item .list_b2 {
-  margin-top: -50px;
-}
-.Evolve_item .list_b3 {
-  margin-top: -50px;
-}
-.product .classic {
-  margin-top: -50px;
+.navbar .nav-links a {
+  text-decoration: none;
+  /* color: #333; */
+  color: white;
+
+  font-size: 16px;
+  padding: 10px;
 }
 
-.product ul li {
-  padding-top: 20px;
-  color: rgb(255, 255, 255);
-  margin-top: -20px;
-
-  height: 25px;
+.navbar .dropdown {
+  position: relative;
 }
 
-.Evolve:hover .Evolve_item {
-  display: block !important;
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3;
 }
-.classic:hover .classic_item {
+
+.navbar .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
+}
+
+.navbar .dropdown-content a:hover {
+  background-color: #c18d53;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar .dropdown .dropdown-content .dropdown-submenu {
+  position: relative;
+}
+
+.navbar
+  .dropdown
+  .dropdown-content
+  .dropdown-submenu
+  .dropdown-submenu-content {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 200px;
+  /* color: aqua; */
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar
+  .dropdown
+  .dropdown-content
+  .dropdown-submenu:hover
+  .dropdown-submenu-content {
+  display: block;
+  /* color: aqua; */
 }
 
 /* --------pop up----------- */
@@ -207,7 +172,7 @@
   border: none;
   cursor: pointer;
   position: absolute; /* Fixed position for right alignment */
-  top: 165px;
+  top: 154px;
   right: 150px;
   z-index: 3;
   border-radius: 10px;
@@ -328,6 +293,7 @@
   font-weight: 500;
   margin-left: 50px;
   margin-top: 30px;
+  text-align: justify;
   position: relative;
   line-height: 20px;
   text-align: left;
@@ -361,6 +327,7 @@
 .whywood ul li {
   margin-left: 80px;
   margin-top: 50px;
+  text-align: justify;
 }
 .whywood ul {
   padding: 20px;
@@ -509,6 +476,116 @@ footer img {
 /* Icon Styling */
 #scrollToTopBtn i {
   font-size: 20px; /* Arrow size */
+}
+
+.profile_about {
+  display: flex;
+  justify-content: space-between;
+}
+.profile_about_left {
+  height: 900px;
+  width: 800px;
+}
+.profile_about_right {
+  margin-left: 100px;
+}
+.profile_about_right ul li {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+  text-align: justify;
+}
+.page-title {
+  background-size: cover;
+  background-position: center center;
+  /* position: relative; */
+  height: 200px;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.environment {
+  display: flex;
+  justify-content: space-between;
+}
+.environment img {
+  height: 500px;
+  width: 700px;
+}
+.environment_right {
+  margin-left: 60px;
+}
+.environment_right ul li {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  list-style: none;
+  margin-top: 50px;
+  margin-left: 30px;
+  text-align: justify;
+}
+/* .auto-container {
+    position: static;
+    max-width: 1250px;
+    padding: 0 15px;
+    margin: 0 auto;
+} */
+
+/* -----------Thoughts of Woodpulp---------------- */
+
+.thoughts {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+.thoughts p {
+  font-size: 20px;
+  width: 70%;
+  text-align: start;
+  margin-top: 40px;
+  text-align: justify;
+}
+.thoughts_card {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 350px;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 2px 2px 10px black;
+}
+
+
+.team_card{
+    width: 25%;
+    height: 500px;
+    border-radius: 20px;
+    border: 1px solid #c08b52;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+     font-family: Arial, sans-serif;
+}
+.team_card img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+.team_card .textp{
+width: 80%;
+font-size: 20px;
+text-align: start;
+font-weight: 500;
+text-align: justify;
+}
+.team{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }
 
 @media only screen and (max-width: 412px) {
