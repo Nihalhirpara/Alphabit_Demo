@@ -1,0 +1,545 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* --------header1--------- */
+
+.header1 {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(69, 51, 43);
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  gap: 50px;
+}
+
+.lang {
+  margin-left: 900px;
+  margin-top: 15px;
+}
+
+/* --------header2--------- */
+
+.header2 {
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 5;
+  display: flex;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 50px;
+  display: flex;
+}
+
+.logos {
+  margin-top: 10px;
+  margin-right: 50px;
+  display: flex;
+  padding-left: 900px;
+  /* height: 70px; */
+}
+
+.isi img {
+  height: 70px;
+  width: 100px;
+}
+
+.gindia img {
+  height: 70px;
+  width: 100px;
+}
+
+.mindia img {
+  height: 70px;
+  width: 100px;
+}
+
+/* .img{
+    height: 265px;
+    width: 100px;
+    position: relative;
+    display: inline-block;
+} */
+
+/* --------header3--------- */
+.nav {
+  margin-top: 20px;
+
+  height: 70px;
+  width: 100%;
+  background-color: rgb(69, 51, 43);
+  display: flex;
+  color: white;
+}
+.list ul {
+  margin-top: 25px;
+  margin-left: 200px;
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.list_a {
+  height: 50px;
+}
+
+.product {
+  display: none !important;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  margin-top: -50px;
+  /* text-align: center; */
+  height: 120px;
+  width: 220px;
+  justify-content: center;
+  z-index: 3;
+}
+
+.Evolve_item {
+  display: flex;
+  display: none !important;
+  background-color: black;
+  /* color: blue; */
+  width: 200px;
+  margin-left: 105px;
+  margin-top: -50px;
+  position: absolute;
+  cursor: pointer;
+}
+.classic_item {
+  display: none;
+  background-color: black;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  width: 200px;
+  margin-left: 150px;
+  margin-top: -40px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#a:hover {
+  background-color: #bf8c4d;
+  width: fit-content;
+}
+
+.list_b1:hover {
+  background-color: #bf8c4d;
+}
+.list_b2:hover {
+  background-color: #bf8c4d;
+}
+.list_b3:hover {
+  background-color: #bf8c4d;
+}
+.list_b:hover {
+  background-color: #bf8c4d;
+}
+
+#sub:hover .product {
+  display: block;
+  width: fit-content;
+  display: block !important;
+
+  margin-top: 10px;
+}
+
+.product ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+.Evolve_item .list_b1 {
+  margin-top: -5px;
+}
+
+.Evolve_item .list_b2 {
+  margin-top: -50px;
+}
+.Evolve_item .list_b3 {
+  margin-top: -50px;
+}
+.product .classic {
+  margin-top: -50px;
+}
+
+.product ul li {
+  padding-top: 20px;
+  color: rgb(255, 255, 255);
+  margin-top: -20px;
+
+  height: 25px;
+}
+
+.Evolve:hover .Evolve_item {
+  display: block !important;
+}
+.classic:hover .classic_item {
+  display: block;
+}
+
+/* --------pop up----------- */
+
+#menuBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #c18d53;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute; /* Fixed position for right alignment */
+  top: 165px;
+  right: 150px;
+  z-index: 3;
+  border-radius: 10px;
+}
+
+/* Popup Container */
+.popup-container {
+  position: fixed;
+  top: -50px;
+  right: -500px; /* Hidden off-screen initially */
+  width: 300px;
+  height: 800px;
+  background-color: black;
+  color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 50px;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+  z-index: 7;
+}
+
+.popup-container.active {
+  right: 0; /* Slide into view */
+}
+
+/* Popup Header */
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.popup-header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 30px;
+  margin: 10px 0;
+  margin-left: 20px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Divider */
+.divider {
+  border-top: 1px solid #444;
+  margin: 20px 0;
+}
+
+/* Map Container */
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+.social-icon {
+  margin-left: 1450px;
+  z-index: 3;
+  color: white;
+  position: fixed;
+  margin-top: -500px;
+}
+
+.whatsapp,
+.mail {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: #c18d53;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  align-items: center;
+}
+.text {
+  height: 110px;
+  width: 100%;
+  background-color: #412d27;
+  color: white;
+  text-align: center;
+  padding-top: 38px;
+}
+
+/* ------------welcome------------ */
+.welcome {
+  padding: 40px;
+  display: flex;
+}
+.welcome img {
+  height: 500px;
+  width: 600px;
+  margin-left: 100px;
+}
+.welcome-text li {
+  font-weight: 500;
+  margin-left: 50px;
+  margin-top: 30px;
+  position: relative;
+  line-height: 20px;
+  text-align: left;
+}
+
+/* -------------infinite slider--------------- */
+/* .slider-container {
+  max-width: 600px; Adjust the width as needed
+  margin: 0 auto; Center the slider horizontally
+  padding: 10px; Add spacing around the slider
+}
+
+.carousel-inner img {
+  max-height: 300px; Set the height of the images
+  object-fit: cover; Ensure the images fill the space nicely
+  border-radius: 8px; Optional: Add rounded corners to images
+} */
+
+/* ---------------whywood----------------- */
+.whywood {
+  display: flex;
+  /* padding: 40px; */
+  margin-top: 30px;
+  background-color: #ebe8e8e2;
+}
+.whywood img {
+  height: 800px;
+  width: 800px;
+  margin-left: -50px;
+}
+.whywood ul li {
+  margin-left: 80px;
+  margin-top: 50px;
+}
+.whywood ul {
+  padding: 20px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+/* ----------------How We Work----------------  */
+.heading h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.work-icons {
+  display: flex;
+  justify-content: space-around;
+  /* margin-left: 100px;
+    margin-top: 50px; */
+}
+.icon1 i {
+  font-size: 40px;
+}
+
+.icon1 p {
+  font-size: 15px;
+  margin-top: 20px;
+  width: 100px;
+}
+
+/* ---------------Advertisement--------------- */
+.ad h4 {
+  margin-left: 130px;
+  margin-top: 50px;
+  font-weight: 800;
+  color: rgb(63, 41, 2);
+}
+.ad h5 {
+  margin-left: 220px;
+  margin-top: 20px;
+  color: #a4580d;
+  font-weight: 700;
+}
+
+/* -----------ClientSay----------- */
+.cs h4 {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+/* -----------------footer------------------ */
+
+footer img {
+  display: block;
+  margin-bottom: 15px;
+  color: white;
+}
+.footer {
+  background-image: url("../Images/footer-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 100%;
+  padding: 40px 0;
+}
+.footer h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+.footer h5::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #f77f00;
+  margin-top: 5px;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer ul li {
+  margin-bottom: 10px;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer ul li a:hover {
+  color: #c18d53;
+}
+.footer .social-icons a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+.footer .social-icons a:hover {
+  color: #c18d53;
+}
+.footer .contact-info p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+.footer .contact-info p i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #c18d53;
+}
+.final-footer {
+  height: 70px;
+  width: 100%;
+  background-color: #c18d53;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+}
+/* Scroll-to-Top Button Styles */
+#scrollToTopBtn {
+  display: flex; /* Hidden by default */
+  position: fixed;
+  bottom: 20px; /* Position from bottom */
+  right: 20px; /* Position from right */
+  z-index: 99; /* Place it above other content */
+  background-color: black; /* Button background */
+  color: white; /* Arrow color */
+  border: none; /* No border */
+  padding: 15px 20px; /* Button size */
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #c18d53; /* Darker blue on hover */
+}
+
+/* Icon Styling */
+#scrollToTopBtn i {
+  font-size: 20px; /* Arrow size */
+}
+
+@media only screen and (max-width: 412px) {
+  /* --------header1--------- */
+  .menu {
+    display: none;
+  }
+  .header1 {
+    height: 50px;
+    width: 100%;
+  }
+  .lang {
+    margin-left: 250px;
+  }
+
+  /* --------header2--------- */
+  .logo {
+    margin-left: 140px;
+  }
+
+  .logos {
+    margin-top: 70px;
+    margin-left: -1120px;
+  }
+
+  .nav {
+    margin-top: 120px;
+    /* width: 412px; */
+  }
+
+  .list ul {
+    display: none;
+  }
+}

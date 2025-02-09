@@ -5,7 +5,7 @@
 .main{
     height: 100px;
     width: 100%;
-    background-color: black;
+    background-color: blanchedalmond;
 }
 
 .menu{
@@ -35,7 +35,7 @@
 }
 .food_item{
        display: none;
-       background-color: yellow;
+       background-color: lightgrey;
        color: black;
        margin-left: 70px;
        margin-top: -30px;
@@ -58,9 +58,9 @@
 }
 
 .list_b:hover{
-    background-color: chartreuse;
+    background-color: lightblue;
 }
 
 #a:hover{
-    background-color: chartreuse;
+    background-color: lightcoral;
 }
