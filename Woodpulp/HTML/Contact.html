@@ -187,5 +187,125 @@
       data-form-id="113660"
     ></div>
     <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+
+    <div class="map-container" style="padding: 50px">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.9648048879717!2d70.76496177479272!3d22.3171707796744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c90f3b0f0861%3A0x888f32c5c365f867!2sAlphabit%20Infoway%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1738935642747!5m2!1sen!2sin"
+        width="600"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <!-- -------------------footer------------------- -->
+    <!-- Footer Section -->
+    <footer
+      class="footer"
+      style="margin-top: 80px; font-family: Arial, sans-serif"
+    >
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Logo and Description -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="../Images/woodpulp_white.png"
+              alt="Woodpulp Logo"
+              style="max-width: 150px; height: 100px"
+            />
+            <p>
+              Woodpulp, an Initiative by a team of experienced engineers to
+              serve woodworkers with world-class products putting every sense of
+              technicality into manufacturing.
+            </p>
+            <div class="social-icons">
+              <p style="font-weight: 700">Follow Us :</p>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+          <!-- Useful Links -->
+          <div class="col-md-2 mb-4">
+            <h5>Useful Links</h5>
+            <ul>
+              <li><a href="#">Company Profile</a></li>
+              <li><a href="#">Technical Property</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- Products -->
+          <div class="col-md-2 mb-4">
+            <h5>Our Products</h5>
+            <ul>
+              <li><a href="#">Evolve Series</a></li>
+              <li><a href="#">Classic Series</a></li>
+            </ul>
+          </div>
+          <!-- Contact Information -->
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <div class="contact-info">
+              <p>
+                <i class="bi bi-geo-alt"></i> Survey No. 133/3, Mahendragadh
+                Road, Near Pipaliya Cross Road, Navlakhi Highway, At: Pipaliya-
+                363660 , Dist.: Morbi, Gujarat.
+              </p>
+              <p><i class="bi bi-telephone"></i> +91 93757 70770</p>
+              <p><i class="bi bi-envelope"></i> info@woodpulp.co.in</p>
+              <p>
+                <i class="bi bi-clock"></i> Working Hours: 09:00 am to 5:00 pm
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="final-footer">
+      <p style="margin-top: 20px">
+        Copyrights 2025. All Rights are Reserved by
+        <span style="color: black"> WoodPulp</span>
+      </p>
+    </div>
+
+    <script>
+      // JavaScript to handle popup toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const closeBtn = document.getElementById("closeBtn");
+      const popup = document.getElementById("popup");
+
+      menuBtn.addEventListener("click", () => {
+        popup.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        popup.classList.remove("active");
+      });
+
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // Show/hide button based on scroll position
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      };
+
+      // Scroll to top when the button is clicked
+      scrollToTopBtn.onclick = function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Smooth scroll animation
+        });
+      };
+    </script>
   </body>
 </html>
