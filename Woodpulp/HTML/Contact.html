@@ -41,6 +41,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
+
   <body>
     <div class="header1">
       <div class="menu">
@@ -55,14 +56,32 @@
           >
         </div>
       </div>
-      <div class="lang">
+      <!-- <div class="lang">
         <select>
           <option>Select Language</option>
           <option>English</option>
           <option>HIndi</option>
         </select>
-      </div>
+      </div> -->
     </div>
+    <div
+      id="google_translate_element"
+      style="margin-left: 1200px; margin-top: -41px"
+    ></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
 
     <!-- ----------Header2----------- -->
 
@@ -96,7 +115,11 @@
             <div class="dropdown-submenu">
               <a href="#">Evolve Series</a>
               <div class="dropdown-submenu-content">
-                <a href="#">Architecture choice </a>
+                <a
+                  href="../HTML/Architecture.html"
+                  style="text-decoration: none; color: white"
+                  >Architecture choice
+                </a>
                 <a href="#">Project Choice</a>
                 <a href="#">Solid Colors</a>
               </div>
@@ -109,7 +132,11 @@
             </div>
           </div>
         </div>
-        <a href="#">Technical Property</a>
+        <a
+          href="../HTML/Property.html"
+          style="text-decoration: none; color: white"
+          >Technical Property</a
+        >
         <a href="#">Contact</a>
       </div>
     </div>
