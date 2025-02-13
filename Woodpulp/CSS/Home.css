@@ -382,65 +382,67 @@
 /* -----------------footer------------------ */
 
 footer img {
-  display: block;
-  margin-bottom: 15px;
-  color: white;
+  display: block !important;
+  margin-bottom: 15px !important;
+  color: white !important;
+  
 }
 .footer {
-  background-image: url("../Images/footer-background.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  color: #fff;
-  width: 100%;
-  padding: 40px 0;
+  background-image: url("../Images/footer-background.jpg") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  color: #fff !important;
+  width: 100% !important;
+  padding: 40px 0 !important;
+  
 }
 .footer h5 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  position: relative;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  margin-bottom: 20px !important;
+  position: relative !important;
 }
 .footer h5::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 2px;
-  background-color: #f77f00;
-  margin-top: 5px;
+  content: "" !important;
+  display: block !important;
+  width: 50px !important;
+  height: 2px !important;
+  background-color: #f77f00 !important;
+  margin-top: 5px !important;
 }
 .footer ul {
-  list-style: none;
-  padding: 0;
+  list-style: none !important;
+  padding: 0 !important;
 }
 .footer ul li {
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
 }
 .footer ul li a {
-  text-decoration: none;
-  color: #fff;
+  text-decoration: none !important;
+  color: #fff !important;
 }
 .footer ul li a:hover {
-  color: #c18d53;
+  color: #c18d53 !important;
 }
 .footer .social-icons a {
-  margin-right: 15px;
-  font-size: 20px;
-  color: #fff;
+  margin-right: 15px !important;
+  font-size: 20px !important;
+  color: #fff !important;
 }
 .footer .social-icons a:hover {
-  color: #c18d53;
+  color: #c18d53 !important;
 }
 .footer .contact-info p {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  font-size: 0.9rem;
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 10px !important;
+  font-size: 0.9rem !important;
 }
 .footer .contact-info p i {
-  font-size: 1.2rem;
-  margin-right: 10px;
-  color: #c18d53;
+  font-size: 1.2rem !important;
+  margin-right: 10px !important;
+  color: #c18d53 !important;
 }
 .final-footer {
   height: 70px;
@@ -637,6 +639,126 @@ table {
   background-color: rgb(245, 244, 244);
   /* box-shadow: 2px 2px 5px 1px black; */
 }
+
+/* ----------------product paging-------------- */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+} */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    max-width: 1300px;
+}
+
+.cards-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+}
+
+.page {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.page:not(.active) {
+    display: none;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.large-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.small-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.series {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.divider {
+    font-size: 20px;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+/* Pagination Buttons */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.arrow {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.arrow:hover {
+    background: #444;
+}
+
 
 @media only screen and (max-width: 412px) {
   /* --------header1--------- */
